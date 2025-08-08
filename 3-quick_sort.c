@@ -19,7 +19,6 @@ void swap(int *a, int *b)
 	}
 }
 
-
 /**
  * lomuto - Partitions the array using the Lomuto
  * partition scheme.
@@ -27,6 +26,7 @@ void swap(int *a, int *b)
  * @low: The starting index of the sub-array.
  * @high: The ending index of the sub-array.
  * @size: The total size of the array.
+ * Return: The index of the pivot element after partitioning.
  */
 
 static int lomuto(int *array, int low, int high, size_t size)
@@ -56,7 +56,7 @@ static int lomuto(int *array, int low, int high, size_t size)
 
 
 /**
- * quick_sort_rec - Recursively sorts the array using Quick sort.
+ * quick_rec - Recursively sorts the array using Quick sort.
  * @array: The array to be sorted.
  * @low: The starting index of the sub-array.
  * @high: The ending index of the sub-array.
